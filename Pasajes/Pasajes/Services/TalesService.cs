@@ -1,5 +1,6 @@
 ﻿using Akavache;
 using Pasajes.Constants;
+using Pasajes.Contracts;
 using Pasajes.Models;
 using Pasajes.Repository;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Pasajes.Services
 {
-    public class TalesService : BaseService
+    public class TalesService : BaseService, ITalesService
     {
         private IGenericRepository _genericRepository;
 

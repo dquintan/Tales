@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Pasajes.Bootstrap;
+using Xamarin.Forms;
 
 namespace Pasajes
 {
@@ -9,6 +10,11 @@ namespace Pasajes
             InitializeComponent();
 
             MainPage = new MainPage();
+        }
+
+        private void InitializeApp()
+        {
+            AppContainer.RegisterDependencies();
         }
 
         protected override void OnStart()
